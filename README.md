@@ -19,9 +19,9 @@ go run main.go and in a new tab in the terminal curl localhost:8080 (or open via
 
 * docker images ( to check the images )
 
-* docker run --rm -p 8080:8080 yourusername/deploy-k8s   (to run the app ) and access htto://localhost:8080
+* docker run --rm -p 8080:8080 yourusername/deploy-k8s   (to run the app ) and access http://localhost:8080
 
-Now let's create a cluster using Kind, https://kind.sigs.k8s.io/ 
+### Now let's create a cluster using Kind, https://kind.sigs.k8s.io/ 
 
 * kind create cluster --name=insert-kluster-name-here
 
@@ -37,4 +37,6 @@ Now let's create a cluster using Kind, https://kind.sigs.k8s.io/
 
 * kubectl get svc -n yournamespacename (to check the services)
 
-* kubectl port-forward svc/goappserversvc -n yournamespacename 8080:8080   
+* kubectl port-forward svc/goappserversvc -n yournamespacename 8080:8080 
+
+### https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#
